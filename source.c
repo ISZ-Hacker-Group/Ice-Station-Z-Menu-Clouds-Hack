@@ -54,3 +54,26 @@ void	Cloud_Hack_Brown(void)
 	data = 0;
 }
 
+void	Cloud_Hack_Light_Blue(void)
+{
+	offset = 0x30000000;
+	WRITEU32(offset + 0x380554, 0xFB007447);
+	offset = 0;
+	data = 0;
+}
+
+void	Cloud_Hack_Grey(void)
+{
+	offset = 0x30000000;
+	WRITEU32(offset + 0x380554, 0xFFFFFFF0);
+	offset = 0;
+	data = 0;
+}
+
+void	Cloud_Hack_Golden(void)
+{
+	offset = 0x30000000;
+	WRITEU32(offset + 0x380554, 0xFF00FFEF);
+	offset = 0;
+	data = 0;
+}
